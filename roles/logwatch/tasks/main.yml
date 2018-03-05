@@ -1,0 +1,11 @@
+- name: Installing logwatch
+  yum: name=logwatch state=installed
+  
+- name: Setting up logwatch
+  copy:
+   src: logwatch.conf
+   dest: /etc/logwatch/conf/logwatch.conf
+   mode: 0644
+   owner: root
+   group: root
+  notify: restart crond

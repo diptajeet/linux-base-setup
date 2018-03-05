@@ -1,0 +1,23 @@
+# Playbook to setup System with basic Linux Configuration
+
+- hosts: servers
+  remote_user: root
+  become: true
+  
+  roles:
+    - yum
+    - banner
+    - rootpw
+    - profile
+    - hosts
+    - timezone
+    - ssh
+    - sshd
+    - chkconfig
+    - ntp
+    - logwatch
+    - rpms
+    - selinux
+    - vmware
+    
+    

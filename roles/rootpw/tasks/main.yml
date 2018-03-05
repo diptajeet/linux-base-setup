@@ -1,0 +1,6 @@
+- name: Updating root password
+  user:
+   name: root
+   update_password: always
+   password: $6$FjNMc2yTaBy5oln2$lqDxWHyNLGBL7YD81PAAarlnJcrp9I0LR5DFSwiJBwk.P2ggiSY7MsddpaeusuiE/0hpbcPPlveRIR5CJvkqI.
+   

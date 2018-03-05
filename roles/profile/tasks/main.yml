@@ -1,0 +1,10 @@
+- name: Setting up system profile
+  copy:
+   src: '{{ playbook_dir }}/files/histenv.sh'
+   dest: /etc/profile.d/histenv.sh
+   owner: root
+   group: root
+   mode: 0755
+
+- name: Updating system profile
+  shell: "source '/etc/profile.d/histenv.sh' "

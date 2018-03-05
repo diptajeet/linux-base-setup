@@ -1,0 +1,4 @@
+# Put your list of servers here
+
+[servers]
+ansible-node1 ansible_ssh_host=172.16.138.60

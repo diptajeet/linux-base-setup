@@ -1,0 +1,28 @@
+- name: Installing additional packages
+  yum: name={{ item }} state=latest
+  with_items:
+   - aide
+   - autofs
+   - collectl
+   - device-mapper-multipath
+   - dos2unix
+   - facter
+   - git
+   - ksh
+   - logrotate
+   - logwatch
+   - lsscsi
+   - mksh
+   - nfs-utils
+   - pam
+   - postfix
+   - rpcbind
+   - zip
+   - wget
+   - screen
+   - sysstat
+   - unix2dos
+   - vlock
+   - xorg-x11-xauth
+   - xterm
+   - zsh

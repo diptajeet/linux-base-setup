@@ -1,0 +1,6 @@
+- name: Disabling services which are not needed
+  service: name={{ item }} state=stopped enabled=no
+  with_items:
+   - ip6tables
+   - iptables
+   - postfix

@@ -1,0 +1,10 @@
+ - name: Installing & enabling EPEL Repo
+   yum:
+    name: epel-release
+    state: installed
+
+ - name: Performing yum updates
+   yum:
+    name: '*'
+    state: latest
+    update_cache: yes
