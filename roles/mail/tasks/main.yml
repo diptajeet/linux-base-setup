@@ -1,0 +1,5 @@
+- name: Sending completion report via email
+  mail:
+   to: '{{ receipient }}'
+   subject: System Configuration completion email - {{ ansible_hostname }}
+   body: "{{ lookup('template', 'mail.j2') }}"
