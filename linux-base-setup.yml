@@ -5,20 +5,20 @@
   become: true
   
   roles:
-    #- yum
-    #- banner
-    #- rootpw
-    #- profile
-    #- hosts
-    #- timezone
-    #- ssh
-    #- sshd
-    #- chkconfig
-    #- ntp
-    #- logwatch
-    #- rpms
-    #- selinux
-    #- vmware
+    - yum
+    - banner
+    - rootpw
+    - profile
+    - hosts
+    - timezone
+    - ssh
+    - sshd
+    - chkconfig
+    - ntp
+    - logwatch
+    - rpms
+    - selinux
+    - vmware
     - mail
     
     
